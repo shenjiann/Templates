@@ -1,0 +1,1 @@
+Storeage of latex templates.
