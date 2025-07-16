@@ -1,79 +1,8 @@
-\begin{thebibliography}{8}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{#1}
-\expandafter\ifx\csname urlstyle\endcsname\relax\else
-  \urlstyle{same}\fi
-\expandafter\ifx\csname href\endcsname\relax
-  \DeclareUrlCommand\doi{\urlstyle{rm}}
-  \def\eprint#1#2{#2}
-\else
-  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
-  \let\eprint\href
-\fi
+\begin{thebibliography}{}
 
-\bibitem[Argenziano and Soyer(2001)]{argenziano_dermoscopy_2001}
-Argenziano G, Soyer H~P.
-\newblock Dermoscopy of pigmented skin lesions–a valuable tool for
-  early\allowbreak[J].
-\newblock The lancet oncology, 2001, 2\allowbreak (7): 443-449.
-
-\bibitem[Brinker et~al.(2018)Brinker, Hekler, Utikal, Grabe, Schadendorf,
-  Klode, Berking, Steeb, Enk, and Von~Kalle]{brinker_skin_2018}
-Brinker T~J, Hekler A, Utikal J~S, Grabe N, Schadendorf D, Klode J, Berking C,
-  Steeb T, Enk A~H, et~al.
-\newblock Skin {Cancer} {Classification} {Using} {Convolutional} {Neural}
-  {Networks}: {Systematic} {Review}\allowbreak[J].
-\newblock Journal of Medical Internet Research, 2018, 20\allowbreak (10):
-  e11936.
-
-\bibitem[Fabbrocini et~al.(2011)Fabbrocini, De~Vita, Pastore, D'Arco, Mazzella,
-  Annunziata, Cacciapuoti, Mauriello, and
-  Monfrecola]{fabbrocini_teledermatology_2011}
-Fabbrocini G, De~Vita V, Pastore F, D'Arco V, Mazzella C, Annunziata M~C,
-  Cacciapuoti S, Mauriello M~C, Monfrecola A.
-\newblock Teledermatology: {From} {Prevention} to {Diagnosis} of {Nonmelanoma}
-  and {Melanoma} {Skin} {Cancer}\allowbreak[J].
-\newblock International Journal of Telemedicine and Applications, 2011, 2011:
-  1-5.
-
-\bibitem[Haenssle et~al.(2018)Haenssle, Fink, Schneiderbauer, Toberer, Buhl,
-  Blum, Kalloo, Hassen, Thomas, and Enk]{haenssle_man_2018}
-Haenssle H~A, Fink C, Schneiderbauer R, Toberer F, Buhl T, Blum A, Kalloo A,
-  Hassen A~B~H, Thomas L, et~al.
-\newblock Man against machine: diagnostic performance of a deep learning
-  convolutional neural network for dermoscopic melanoma recognition in
-  comparison to 58 dermatologists\allowbreak[J].
-\newblock Annals of oncology, 2018, 29\allowbreak (8): 1836-1842.
-
-\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he_deep_2016}
-He K, Zhang X, Ren S, Sun J.
-\newblock Deep residual learning for image
-  recognition\allowbreak[C]//\allowbreak
-Proceedings of the {IEEE} conference on computer vision and pattern
-  recognition.
-\newblock 2016: 770-778.
-
-\bibitem[Kawahara et~al.(2016)Kawahara, BenTaieb, and
-  Hamarneh]{kawahara_deep_2016}
-Kawahara J, BenTaieb A, Hamarneh G.
-\newblock Deep features to classify skin lesions\allowbreak[C]//\allowbreak
-2016 {IEEE} 13th international symposium on biomedical imaging ({ISBI}).
-\newblock IEEE, 2016: 1397-1400.
-
-\bibitem[Krizhevsky et~al.(2012)Krizhevsky, Sutskever, and
-  Hinton]{krizhevsky_imagenet_2012}
-Krizhevsky A, Sutskever I, Hinton G~E.
-\newblock {ImageNet} {Classification} with {Deep} {Convolutional} {Neural}
-  {Networks}\allowbreak[C]//\allowbreak
-Advances in {Neural} {Information} {Processing} {Systems}: volume~25.
-\newblock Curran Associates, Inc., 2012.
-
-\bibitem[Pomponiu et~al.(2016)Pomponiu, Nejati, and
-  Cheung]{pomponiu_deepmole_2016}
-Pomponiu V, Nejati H, Cheung N~M.
-\newblock Deepmole: {Deep} neural networks for skin mole lesion
-  classification\allowbreak[C]//\allowbreak
-2016 {IEEE} international conference on image processing ({ICIP}).
-\newblock IEEE, 2016: 2623-2627.
+\bibitem[Dell, 2025]{dell2025deep}
+Dell, M. (2025).
+\newblock Deep learning for economists.
+\newblock {\em Journal of Economic Literature}, 63(1):5--58.
 
 \end{thebibliography}

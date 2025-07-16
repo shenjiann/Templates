@@ -2,8 +2,6 @@
 \usepackage{geometry}
 \geometry{top=1in}
 
-\usepackage{natbib}
-
 \usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs}
 
 % 表格相关
@@ -20,6 +18,17 @@
 \fancyhf{}  % 清除默认的页眉和页脚设置
 \fancyfoot[C]{\thepage}  % 页脚中间显示页码
 \renewcommand{\headrulewidth}{0pt}  % 去除页眉分隔线
+
+% 参考文献及引用
+\usepackage[authoryear]{natbib}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
 
 % 标题
 \title{\textbf{Latex模版（中文）}}
@@ -39,12 +48,13 @@
 
 \section{Section 1}
 
-\section{Section 2}
+\section{关于参考文献引用}
+行内引用：\citet{dell2025deep}
 
+括号引用 \citep{dell2025deep}
 
-\setcitestyle{numbers}
-%\bibliographystyle{ref/gbt7714-author-year-sj}
-%\bibliography{ref/ref.bib} 
-
+\setcitestyle{numbers,square}
+\bibliographystyle{apalike}
+\bibliography{reference.bib} % 指向 reference.bib 文件
 
 \end{document}
