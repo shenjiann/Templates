@@ -1,0 +1,88 @@
+%% =============================================================
+%% sjcustom.sty
+%% 一个简单的宏包，用于创建 figurenotes 和 tablenotes 环境
+%% =============================================================
+% 声明 LaTeX 版本和包信息
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{sjcustom}[2025/12/18 Custom style Notes by Shen Jian]
+
+
+% =============================================================
+% 依赖宏包
+% =============================================================
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+\usepackage{indentfirst}
+\RequirePackage[title]{appendix}
+
+
+% =============================================================
+% 定义 figurenotes 和 tablenotes
+% =============================================================
+\newcommand{\notecontentfont}{\footnotesize}
+\newcommand{\notetitlefont}{\footnotesize\itshape}
+
+\newenvironment{figurenotes}[1][Notes]
+  {%
+    \par\smallskip                   % 垂直间距
+    \noindent                        % 取消首行缩进
+    \begin{minipage}[t]{\linewidth}  % 核心：限制宽度与图片容器一致
+    \notecontentfont                 % 应用内容字号
+    {\notetitlefont #1:}            % 打印标题 (例如 "Note:")
+  }
+  {%
+    \end{minipage}                   % 结束盒子
+    \par                             % 结束段落
+  }
+
+\newenvironment{tablenotes}[1][Notes]
+  {%
+    \par\smallskip
+    \noindent
+    \begin{minipage}[t]{\linewidth}
+    \notecontentfont
+    {\notetitlefont #1:}
+  }
+  {%
+    \end{minipage}
+    \par
+  }
+
+
+% =============================================================
+% 定义定理类环境 (Theorems, Lemmas, etc.)
+% =============================================================
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+
+
+% =============================================================
+% 参考文献与超链接设置 (放在文件末尾)
+% =============================================================
+\RequirePackage[authoryear]{natbib}
+\RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,  % 开启彩色链接 (去除方框)
+    linkcolor=blue,   % 内部链接 (目录、公式、图表) 颜色
+    citecolor=blue,   % 参考文献引用颜色
+    urlcolor=blue,    % 网址链接颜色
+    bookmarksnumbered=true, % 书签带章节编号
+    pdfborder={0 0 0} % 确保在某些阅读器中完全去除边框
+}
+
+\endinput
+%% 文件结束
